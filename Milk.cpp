@@ -2,7 +2,7 @@
 #include "Milk.h"
 
 
-Milk::Milk(Beverage * beverage)
+Milk::Milk(std::shared_ptr<Beverage> beverage)
 {
    this->beverage = beverage;
 }

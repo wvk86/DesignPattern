@@ -1,11 +1,13 @@
 #pragma once
 #include "CondimentDecorator.h"
+#include <memory>
+
 class Mocha : public CondimentDecorator
 {
 public:
-   Beverage * beverage;
+   std::shared_ptr<Beverage> beverage;
 
-   Mocha(Beverage * beverage);
+   Mocha(std::shared_ptr<Beverage> beverage);
    ~Mocha() {};
 
    double cost();

@@ -1,12 +1,13 @@
 #pragma once
 #include "CondimentDecorator.h"
+#include <memory>
 
 class Soy : public CondimentDecorator
 {
 public:
-   Beverage * beverage;
+   std::shared_ptr<Beverage> beverage;
 
-   Soy(Beverage * beverage);
+   Soy(std::shared_ptr<Beverage> beverage);
    ~Soy() {};
 
    double cost();

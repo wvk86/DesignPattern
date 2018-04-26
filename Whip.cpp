@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "Whip.h"
 
-Whip::Whip(Beverage * beverage)
+Whip::Whip(std::shared_ptr<Beverage> beverage)
 {
    this->beverage = beverage;
 }

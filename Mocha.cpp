@@ -2,7 +2,7 @@
 #include "Mocha.h"
 
 
-Mocha::Mocha(Beverage * beverage)
+Mocha::Mocha(std::shared_ptr<Beverage> beverage)
 {
    this->beverage = beverage;
 }
